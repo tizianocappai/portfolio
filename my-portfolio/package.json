@@ -13,9 +13,11 @@
     "yarn": "yarn is not supported, please use npm"
   },
   "dependencies": {
+    "node-sass": "^7.0.1",
     "react": "^16.9.0",
     "react-dom": "~16.9.0",
-    "react-reveal": "^1.2.2"
+    "react-reveal": "^1.2.2",
+    "rebuild": "^0.1.2"
   },
   "devDependencies": {
     "@types/react": "^16.9.0",
@@ -28,6 +30,7 @@
     "eslint-plugin-n": "^15.1.0",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.29.4",
+    "prettier": "^2.6.2",
     "sass": "^1.50.1",
     "scss": "^0.2.4",
     "vite": "^2.7.7"

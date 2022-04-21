@@ -4,10 +4,10 @@ import './styles.scss';
 
 const Intro = () => {
     return (
-        <section className={"intro-section"}>
+        <section className={"container intro-section"}>
             <Fade bottom cascade opposite>
                 <h1 className={'intro-section__name'}>Hello, I am Tiziano</h1>
-                <h2 className={'intro-section__desc'}>and I am a web developer</h2>
+                <h2 className={'intro-section__desc'}>and I am a web developer.</h2>
             </Fade>
         </section>
     )

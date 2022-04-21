@@ -31,11 +31,12 @@ $breakpoints: (
         mobile: 425px,
         tablet: 768px,
         laptop: 1024px,
-        desktop: 1680px
+        desktop: 1440px,
+        desktop-large: 1680px
 );
 
 //utils
-$max-width-container: map-get($breakpoints, "desktop");
+$max-width-container: map-get($breakpoints, "desktop-large");
 
 //margin
 $margin-base: 16px;
