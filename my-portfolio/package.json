@@ -8,7 +8,7 @@
     "preview": "vite preview"
   },
   "engines": {
-    "node": "16.14.2",
+    "node": ">=14.0.0",
     "npm": ">=8.5.0",
     "yarn": "yarn is not supported, please use npm"
   },
