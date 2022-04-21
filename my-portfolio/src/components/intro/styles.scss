@@ -13,6 +13,7 @@
     line-height: $line-height-large;
     font-weight: 500;
     margin-bottom: $margin-base * 1.5;
+    text-align: center;
   }
 
   &__desc {
@@ -20,5 +21,6 @@
     font-size: $font-size-medium-large;
     line-height: $line-height-medium-large;
     font-weight: 400;
+    text-align: center;
   }
 }
