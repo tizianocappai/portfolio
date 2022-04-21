@@ -1,10 +1,55 @@
 import React from "react";
 import './styles.scss';
 
+import html from '../../assets/images/myskill/html.svg';
+import css3 from '../../assets/images/myskill/css3.svg';
+import javascript from '../../assets/images/myskill/javascript.svg';
+import typescript from '../../assets/images/myskill/typescript.svg';
+import react from '../../assets/images/myskill/react.svg';
+import angular from '../../assets/images/myskill/angular.svg';
+import git from '../../assets/images/myskill/git.svg';
+
+const skillsArray = [
+    {
+        name: 'HTML5',
+        src: html
+    },
+    {
+        name: 'CSS3',
+        src: css3
+    },
+    {
+        name: 'Javascript',
+        src: javascript
+    },
+    {
+        name: 'Typescript',
+        src: typescript
+    },
+    {
+        name: 'React',
+        src: react
+    },
+    {
+        name: 'Angular',
+        src: angular
+    },
+    {
+        name: 'Git',
+        src: git
+    }
+    ]
+
 const MySkill = () => {
     return (
-        <section className={"container my-skill-section"}>
+        <section className={"container scroll-snap-container my-skill-section"}>
             <h3 className={'my-skill-section__title'}>My Skill</h3>
+            <ul className={'my-skill-section__list'}>
+                {skillsArray.map((skill) => (
+                    <li className={'my-skill-section__list-item'}>{skill.name} <img className={'my-skill-section__list-item-image'}
+                                                                             src={skill.src} alt={'html5 icon'}/></li>
+                ))}
+            </ul>
         </section>
     )
 }
