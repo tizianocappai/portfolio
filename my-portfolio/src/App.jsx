@@ -1,12 +1,23 @@
-import React from 'react'
-import Intro from './components/intro';
+import React, {lazy, Suspense} from 'react'
+import {Route, BrowserRouter as Router, Switch, Redirect} from "react-router-dom";
+
+const HomePage = lazy(() => import('./pages/home'));
 
 function App() {
 
   return (
-    <main className={"main-section"}>
-        <Intro />
-    </main>
+      <Suspense fallback={<div>Loading...</div>}>
+          <Router>
+              <Switch>
+                  <Route exact path="/" component={HomePage}/>
+                  <Route exact path='/home' component={HomePage}/>
+                  <Route path="*" >
+                      <Redirect to="/home" />
+                  </Route>
+              </Switch>
+          </Router>
+      </Suspense>
+
   )
 }
 
