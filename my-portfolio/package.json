@@ -13,6 +13,7 @@
     "yarn": "yarn is not supported, please use npm"
   },
   "dependencies": {
+    "@loadable/component": "^5.15.2",
     "node-sass": "^7.0.1",
     "react": "^16.9.0",
     "react-dom": "~16.9.0",
