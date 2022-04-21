@@ -1,24 +1,22 @@
 module.exports = {
-  'env': {
-    'browser': true,
-    'es2021': true,
+  env: {
+    browser: true,
+    es2021: true
   },
-  'extends': [
-    'eslint:recommended',
+  extends: [
     'plugin:react/recommended',
-    'google',
+    'standard'
   ],
-  'files': ['**/*.js', '**/*.jsx'],
-  'parserOptions': {
-    'ecmaFeatures': {
-      'jsx': true,
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true
     },
-    'ecmaVersion': 'latest',
-    'sourceType': 'module',
+    ecmaVersion: 'latest',
+    sourceType: 'module'
   },
-  'plugins': [
-    'react',
+  plugins: [
+    'react'
   ],
-  'rules': {
-  },
-};
+  rules: {
+  }
+}

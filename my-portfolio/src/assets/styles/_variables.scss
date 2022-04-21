@@ -35,4 +35,8 @@ $breakpoints: (
 );
 
 //utils
-$max-width-container: map-get($breakpoints, "desktop")
+$max-width-container: map-get($breakpoints, "desktop");
+
+//margin
+$margin-base: 16px;
+$padding-base: 16px;

@@ -1,11 +1,14 @@
 import React from "react";
-
+import Fade from "react-reveal/Fade";
 import './styles.scss';
 
-const Intro = ()=> {
+const Intro = () => {
     return (
         <section className={"intro-section"}>
-            hello
+            <Fade bottom cascade opposite>
+                <h1 className={'intro-section__name'}>Hello, I am Tiziano</h1>
+                <h2 className={'intro-section__desc'}>and I am a web developer</h2>
+            </Fade>
         </section>
     )
 }
