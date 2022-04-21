@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'google',
   ],
+  'files': ['**/*.js', '**/*.jsx'],
   'parserOptions': {
     'ecmaFeatures': {
       'jsx': true,
