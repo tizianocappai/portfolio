@@ -3,7 +3,7 @@ import './styles.scss';
 
 const Myself = () => {
     return (
-        <section className={"container myself-section"}>
+        <section className={"container scroll-snap-container myself-section"}>
             <p className={'myself-section__paragraph'}>I was born in Rome on January 5th 1999.</p>
             <p className={'myself-section__paragraph'}>Always had a lot of passion for computer science, football and bike.</p>
             <p className={'myself-section__paragraph'}>Graduated at the age of 18 in computer science in Rome.</p>

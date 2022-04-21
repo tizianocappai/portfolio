@@ -4,6 +4,7 @@ import loadable from '@loadable/component'
 import './styles.scss';
 
 const Myself = loadable(() => import('../../components/myself'))
+const MySkill = loadable(() => import('../../components/myskill'))
 
 function HomePage() {
 
@@ -11,6 +12,7 @@ function HomePage() {
         <main className={"home-page"}>
             <Intro />
             <Myself />
+            <MySkill />
         </main>
     )
 }
