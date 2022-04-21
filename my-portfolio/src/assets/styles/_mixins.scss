@@ -1,0 +1,23 @@
+@import "variables";
+
+@mixin media($from: null, $to: null) {
+  $from: map-get($breakpoints, $from);
+  $to: map-get($breakpoints, $to);
+  $gap: 0.5px;
+
+  @if $from and $to {
+    @media (min-width: $from) and (max-width: $to - $gap) {
+      @content;
+    }
+  } @else if $from {
+    @media (min-width: $from) {
+      @content;
+    }
+  } @else if $to {
+    @media (max-width: $to - $gap) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}

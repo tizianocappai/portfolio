@@ -1,0 +1,24 @@
+@import "src/assets/styles/variables";
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  &__name {
+    color: $black;
+    font-size: $font-size-large;
+    line-height: $line-height-large;
+    font-weight: 500;
+    margin-bottom: $margin-base * 1.5;
+  }
+
+  &__desc {
+    color: $black;
+    font-size: $font-size-medium-large;
+    line-height: $line-height-medium-large;
+    font-weight: 400;
+  }
+}
