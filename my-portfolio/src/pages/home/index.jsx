@@ -5,6 +5,7 @@ import Intro from "../../components/@home/intro";
 
 const Myself = loadable(() => import('../../components/@home/myself'))
 const MySkill = loadable(() => import('../../components/@home/myskill'))
+const MyContacts = loadable(() => import('../../components/@home/mycontacts'))
 
 function HomePage() {
 
@@ -17,6 +18,7 @@ function HomePage() {
             <Intro />
             <Myself />
             <MySkill />
+            <MyContacts />
         </main>
     )
 }

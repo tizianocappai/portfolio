@@ -4,9 +4,7 @@
         "es2021": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "google",
-        "prettier"
+        "plugin:react/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -18,6 +16,5 @@
     "plugins": [
         "react"
     ],
-    "rules": {
-    }
+    "rules": {}
 }

@@ -1,7 +1,7 @@
 @import "src/assets/styles/variables";
 @import "src/assets/styles/mixins";
 
-.my-skill-section {
+.my-contacts-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,29 +24,28 @@
 
   &__list {
     list-style: none;
+
+    @include media($from: tablet) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 
   &__list-item {
-    color: var(--text-color);
-    font-size: $font-size-small;
-    line-height: $line-height-small;
-    margin-bottom: $margin-base;
-    font-weight: 300;
+    margin-bottom: $margin-base * 1.5;
     display: flex;
     align-items: center;
     justify-content: center;
     transition-duration: .3s;
 
     @include media($from: tablet) {
-      font-size: $font-size-medium;
-      line-height: $line-height-medium;
-      margin-bottom: $margin-base * 2;
+      margin: 0 $margin-base * 1.5 $margin-base * 2;
     }
   }
 
   &__list-item-image {
-    max-width: 20px;
-    margin-left: $margin-base * .5;
+    max-width: 50px;
   }
 
 }
