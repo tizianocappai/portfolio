@@ -11,7 +11,7 @@ const GREETING_HOURS = {
 
 const Intro = () => {
     const now = new Date();
-    const hours = now.getUTCHours();
+    const hours = now.getHours();
 
     const getGreeting = () => {
         if (hours > 5 && hours <= 12) return GREETING_HOURS.GOOD_MORNING;
