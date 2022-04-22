@@ -9,7 +9,7 @@
   min-height: 100vh;
 
   &__name {
-    color: $black;
+    color: var(--text-color);
     font-size: $font-size-large;
     line-height: $line-height-large;
     font-weight: 500;
@@ -23,7 +23,7 @@
   }
 
   &__desc {
-    color: $black;
+    color: var(--text-color);
     font-size: $font-size-medium-large;
     line-height: $line-height-medium-large;
     font-weight: 400;

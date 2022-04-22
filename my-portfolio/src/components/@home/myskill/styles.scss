@@ -9,7 +9,7 @@
   min-height: 100vh;
 
   &__title {
-    color: $black;
+    color: var(--text-color);
     font-size: $font-size-medium;
     line-height: $line-height-medium;
     font-weight: 400;
@@ -27,6 +27,7 @@
   }
 
   &__list-item {
+    color: var(--text-color);
     font-size: $font-size-small;
     line-height: $line-height-small;
     margin-bottom: $margin-base;

@@ -1,0 +1,11 @@
+@import "variables";
+
+body {
+  --text-color: #{$black};
+  --background-color: #{$white};
+}
+
+.dark {
+  --text-color: #{$white};
+  --background-color: #{$black};
+}

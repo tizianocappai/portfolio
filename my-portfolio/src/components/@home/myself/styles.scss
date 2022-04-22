@@ -9,7 +9,7 @@
   min-height: 100vh;
 
   &__paragraph {
-    color: $black;
+    color: var(--text-color);
     font-size: $font-size-base;
     line-height: $line-height-medium;
     font-weight: 400;

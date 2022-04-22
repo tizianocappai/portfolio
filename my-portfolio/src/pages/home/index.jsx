@@ -8,8 +8,12 @@ const MySkill = loadable(() => import('../../components/@home/myskill'))
 
 function HomePage() {
 
+    const now = new Date();
+    const hours = now.getUTCHours();
+    const isDarkMode = hours > 17 && hours < 6;
+
     return (
-        <main className={"home-page"}>
+        <main className={`home-page ${isDarkMode ? 'dark' : ''}`}>
             <Intro />
             <Myself />
             <MySkill />
