@@ -5,20 +5,24 @@
   max-width: calc(100% - #{$margin-base});
   margin: 0 auto;
 
-  @include media($from: tablet){
+  @include media($from: mobile){
     max-width: map-get($breakpoints, mobile);
   }
 
-  @include media($from: laptop){
+  @include media($from: tablet){
     max-width: map-get($breakpoints, tablet);
   }
 
-  @include media($from: desktop){
+  @include media($from: laptop){
     max-width: map-get($breakpoints, laptop);
   }
 
-  @include media($from: desktop-large){
+  @include media($from: desktop){
     max-width: map-get($breakpoints, desktop);
+  }
+
+  @include media($from: desktop-large){
+    max-width: map-get($breakpoints, desktop-large);
   }
 
 }

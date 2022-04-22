@@ -1,10 +1,10 @@
 import React from 'react'
-import Intro from "../../components/intro";
 import loadable from '@loadable/component'
 import './styles.scss';
+import Intro from "../../components/@home/intro";
 
-const Myself = loadable(() => import('../../components/myself'))
-const MySkill = loadable(() => import('../../components/myskill'))
+const Myself = loadable(() => import('../../components/@home/myself'))
+const MySkill = loadable(() => import('../../components/@home/myskill'))
 
 function HomePage() {
 
