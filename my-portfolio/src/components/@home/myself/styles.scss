@@ -19,6 +19,7 @@
     @include media($from: tablet) {
       font-size: $font-size-medium-large;
       line-height: $line-height-medium-large;
+      margin-bottom: $margin-base * 3.5;
     }
   }
 

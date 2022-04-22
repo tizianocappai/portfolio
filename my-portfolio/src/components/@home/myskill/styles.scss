@@ -13,7 +13,7 @@
     font-size: $font-size-medium;
     line-height: $line-height-medium;
     font-weight: 400;
-    margin-bottom: $margin-base * 2;
+    margin-bottom: $margin-base * 3;
     text-align: center;
 
     @include media($from: tablet) {
@@ -40,7 +40,7 @@
     @include media($from: tablet) {
       font-size: $font-size-medium;
       line-height: $line-height-medium;
-      margin-bottom: $margin-base * 1.5;
+      margin-bottom: $margin-base * 2;
     }
 
     &:hover {
