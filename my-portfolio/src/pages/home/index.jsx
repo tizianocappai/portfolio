@@ -1,15 +1,19 @@
 import React from 'react'
-import Intro from "../../components/intro";
 import loadable from '@loadable/component'
 import './styles.scss';
+import Intro from "../../components/@home/intro";
 
-const Myself = loadable(() => import('../../components/myself'))
-const MySkill = loadable(() => import('../../components/myskill'))
+const Myself = loadable(() => import('../../components/@home/myself'))
+const MySkill = loadable(() => import('../../components/@home/myskill'))
 
 function HomePage() {
 
+    const now = new Date();
+    const hours = now.getUTCHours();
+    const isDarkMode = hours > 17 && hours < 6;
+
     return (
-        <main className={"home-page"}>
+        <main className={`home-page ${isDarkMode ? 'dark' : ''}`}>
             <Intro />
             <Myself />
             <MySkill />

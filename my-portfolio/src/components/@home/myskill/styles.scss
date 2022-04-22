@@ -1,4 +1,5 @@
 @import "src/assets/styles/variables";
+@import "src/assets/styles/mixins";
 
 .my-skill-section {
   display: flex;
@@ -8,12 +9,17 @@
   min-height: 100vh;
 
   &__title {
-    color: $black;
+    color: var(--text-color);
     font-size: $font-size-medium;
     line-height: $line-height-medium;
     font-weight: 400;
     margin-bottom: $margin-base * 2;
     text-align: center;
+
+    @include media($from: tablet) {
+      font-size: $font-size-large;
+      line-height: $line-height-large;
+    }
   }
 
   &__list {
@@ -21,6 +27,7 @@
   }
 
   &__list-item {
+    color: var(--text-color);
     font-size: $font-size-small;
     line-height: $line-height-small;
     margin-bottom: $margin-base;
@@ -28,6 +35,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition-duration: .3s;
+
+    @include media($from: tablet) {
+      font-size: $font-size-medium;
+      line-height: $line-height-medium;
+      margin-bottom: $margin-base * 1.5;
+    }
+
+    &:hover {
+      transform: scale(1.3);
+      transition: .3s ease-in-out;
+    }
   }
 
   &__list-item-image {
