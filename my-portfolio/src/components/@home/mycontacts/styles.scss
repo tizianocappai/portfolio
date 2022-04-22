@@ -46,6 +46,11 @@
 
   &__list-item-image {
     max-width: 50px;
+
+    &--background {
+      border-radius: 50%;
+      background-color: $white;
+    }
   }
 
 }

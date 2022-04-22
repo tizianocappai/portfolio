@@ -22,6 +22,7 @@ const contactsArray = [
         href: 'https://github.com/tizianocappai',
         src: github,
         alt: 'github icon',
+        haveBackground: true
     },
     {
         href: 'https://www.instagram.com/tizianocappai_/',
@@ -77,7 +78,7 @@ const MyContacts = () => {
                             <img width={'50'}
                                  height={'50'}
                                  loading="lazy"
-                                 className={'my-contacts-section__list-item-image'}
+                                 className={`my-contacts-section__list-item-image ${!!contact.haveBackground ? 'my-contacts-section__list-item-image--background' : ''}`}
                                  src={contact.src} alt={contact.alt}/>
                         </a>
                     </motion.li>

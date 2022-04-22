@@ -1,6 +1,6 @@
+import './styles.scss';
 import React from 'react'
 import loadable from '@loadable/component'
-import './styles.scss';
 import Intro from "../../components/@home/intro";
 
 const Myself = loadable(() => import('../../components/@home/myself'))
@@ -11,7 +11,7 @@ function HomePage() {
 
     const now = new Date();
     const hours = now.getUTCHours();
-    const isDarkMode = hours > 17 && hours < 6;
+    const isDarkMode = Boolean(hours > 17 || hours < 6);
 
     return (
         <main className={`home-page ${isDarkMode ? 'dark' : ''}`}>
