@@ -67,6 +67,11 @@ const MySkill = () => {
             },
         },
         hidden: {opacity: 0},
+        onHover: {scale: 1.1, transition: {
+                type: 'spring',
+                duration: 0.3,
+            },
+        },
     };
 
     return (
@@ -82,6 +87,7 @@ const MySkill = () => {
                     <motion.li key={skill.name}
                                initial={'hidden'}
                                whileInView={'visible'}
+                               whileHover={'onHover'}
                                variants={variantsSkill}
                         className={'my-skill-section__list-item'}
                     >
