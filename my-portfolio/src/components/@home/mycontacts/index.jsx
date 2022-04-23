@@ -42,7 +42,7 @@ const MyContacts = () => {
         hidden: {opacity: 0, y: -50},
     };
 
-    const variantsSkill = {
+    const animationsSkill = {
         visible: {
             opacity: 1, y: 0, transition: {
                 type: 'spring',
@@ -50,7 +50,7 @@ const MyContacts = () => {
             },
         },
         hidden: {opacity: 0},
-        onHover: {scale: 1.3, transition: {
+        bounceUp: {y: [0, -30, 0], transition: {
                 type: 'spring',
                 duration: 0.3,
             },
@@ -70,8 +70,8 @@ const MyContacts = () => {
                     <motion.li key={index}
                                initial={'hidden'}
                                whileInView={'visible'}
-                               whileHover={'onHover'}
-                               variants={variantsSkill}
+                               whileHover={'bounceUp'}
+                               variants={animationsSkill}
                         className={'my-contacts-section__list-item'}
                     >
                         <a href={contact.href} target={"_blank"} rel="noreferrer">
