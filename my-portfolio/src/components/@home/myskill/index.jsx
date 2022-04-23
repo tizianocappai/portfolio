@@ -60,17 +60,20 @@ const MySkill = () => {
     };
 
     const variantsSkill = {
-        visible: {
-            opacity: 1, y: 0, transition: {
+        visible: i => ({
+            opacity: 1,
+            transition: {
                 type: 'spring',
+                delay: i * 0.3,
                 duration: 0.5,
             },
-        },
+        }),
         hidden: {opacity: 0},
-        onHover: {scale: 1.1, transition: {
-                type: 'spring',
-                duration: 0.3,
-            },
+        onHover: {
+            x: [0, -20, 0, 20, 0], transition: {
+                duration: 0.5,
+                bounce: 0.3
+            }
         },
     };
 
@@ -89,7 +92,7 @@ const MySkill = () => {
                                whileInView={'visible'}
                                whileHover={'onHover'}
                                variants={variantsSkill}
-                        className={'my-skill-section__list-item'}
+                               className={'my-skill-section__list-item'}
                     >
                         {skill.name}
                         <img width={'20'}
